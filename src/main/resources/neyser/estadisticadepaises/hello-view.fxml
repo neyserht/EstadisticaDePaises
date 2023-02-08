@@ -18,7 +18,7 @@
     <Label fx:id="labelPoblacion"/>
     <Label fx:id="labelArea"/>
     <Label fx:id="labelPbi"/>
-    <ComboBox fx:id="comboBoxPaises" promptText="Busqueda" >
+    <ComboBox fx:id="comboBoxPaises" promptText="Busqueda test" >
         <items>
             <FXCollections fx:factory="observableArrayList">
                 <String fx:id="choice0" fx:value="Pais"/>
