@@ -3,10 +3,9 @@ package neyser.estadisticadepaises;
 public class Paises
 {
     public String nombre;
-    public Integer poblacion;
-    public Double area, pbi;
+    public Integer poblacion, area, pbi;
 
-    public Paises(String nombre, Integer poblacion, Double area, Double pbi)
+    public Paises(String nombre, Integer poblacion, Integer area, Integer pbi)
     {
         this.nombre = nombre;
         this.poblacion = poblacion;
