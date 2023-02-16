@@ -89,9 +89,9 @@ public class HelloController {
             // Imprimir resultados
             labelMensaje.setText("");
             labelPais.setText("Pais: "+paises.get(posicion).nombre);
-            labelPoblacion.setText("Población: "+paises.get(posicion).poblacion);
-            labelArea.setText("Área: "+paises.get(posicion).area);
-            labelPbi.setText("PBI: "+paises.get(posicion).pbi);
+            labelPoblacion.setText("Población: "+paises.get(posicion).poblacion + " personas");
+            labelArea.setText("Área: "+paises.get(posicion).area + " km^2");
+            labelPbi.setText("PBI: US$ "+paises.get(posicion).pbi);
         }
         textFiel1.clear();
     }
