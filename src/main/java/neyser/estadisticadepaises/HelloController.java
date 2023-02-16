@@ -35,8 +35,8 @@ public class HelloController {
         // Obtener posicion de busqueda
         Integer posicion = 99;
 
-        System.out.println("Indicador: " + indicador);
-        System.out.println("Valor: " + valor);
+        // System.out.println("Indicador: " + indicador);
+        // System.out.println("Valor: " + valor);
 
         for (int i = 0; i < paises.size() ; i++) {
             switch (indicador){
@@ -76,7 +76,7 @@ public class HelloController {
                 default:
                     mensaje = "Error: Debe Seleccionar una opción válida";
             }
-            System.out.println("Posicion: " + posicion);
+            // System.out.println("Posicion: " + posicion);
         }
 
         if (posicion==99){

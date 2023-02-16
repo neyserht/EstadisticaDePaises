@@ -1,34 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.control.ComboBox?>
-<?import javafx.collections.FXCollections?>
-<?import java.lang.String?>
-<VBox alignment="CENTER" spacing="10.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="neyser.estadisticadepaises.HelloController">
+<VBox alignment="CENTER" prefHeight="800.0" prefWidth="300.0" spacing="5.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="neyser.estadisticadepaises.HelloController">
     <padding>
-        <Insets bottom="50.0" left="50.0" right="50.0" top="50.0"/>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
-    <Label fx:id="labelMensaje"/>
-    <Label fx:id="labelPais"/>
-    <Label fx:id="labelPoblacion"/>
-    <Label fx:id="labelArea"/>
-    <Label fx:id="labelPbi"/>
-    <ComboBox fx:id="comboBoxPaises" promptText="Busqueda test" >
+    <Label fx:id="labelMensaje">
+      <font>
+         <Font name="System Bold" size="24.0" />
+      </font></Label>
+    <Label fx:id="labelPais">
+      <font>
+         <Font size="24.0" />
+      </font></Label>
+    <Label fx:id="labelPoblacion">
+      <font>
+         <Font size="24.0" />
+      </font></Label>
+    <Label fx:id="labelArea">
+      <font>
+         <Font size="24.0" />
+      </font></Label>
+    <Label fx:id="labelPbi">
+      <font>
+         <Font size="24.0" />
+      </font></Label>
+    <ComboBox fx:id="comboBoxPaises" promptText="Busqueda">
         <items>
             <FXCollections fx:factory="observableArrayList">
-                <String fx:id="choice0" fx:value="Pais"/>
-                <String fx:id="choice1" fx:value="Población"/>
-                <String fx:id="choice2" fx:value="Área"/>
-                <String fx:id="choice3" fx:value="PIB per cápita"/>
+                <String fx:id="choice0" fx:value="Pais" />
+                <String fx:id="choice1" fx:value="Población" />
+                <String fx:id="choice2" fx:value="Área" />
+                <String fx:id="choice3" fx:value="PIB per cápita" />
             </FXCollections>
         </items>
     </ComboBox>
-    <TextField fx:id="textFiel1" />
-    <Button fx:id="button1" text="Aceptar" onAction="#onF1"/>
+    <TextField fx:id="textFiel1">
+      <font>
+         <Font size="24.0" />
+      </font></TextField>
+    <Button fx:id="button1" onAction="#onF1" text="Aceptar" textFill="#1723d3">
+      <font>
+         <Font size="24.0" />
+      </font></Button>
 </VBox>
